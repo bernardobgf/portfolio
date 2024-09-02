@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu Nome - Portfólio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container">
+            <h1 class="logo">BBF</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#about">Sobre Mim</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <div class="overlay"></div>
+        <div class="content" data-aos="fade-up">
+            <h2>Olá, Eu Sou <span>Bernardo Bregeron Flores</span></h2>
+            <p>Desenvolvedor Web</p>
+            <a href="#portfolio" class="btn">Veja Meu Trabalho</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container" data-aos="fade-right">
+            <h2>Sobre Mim</h2>
+            <p>Sou um estudante de engenharia eletrônica, e análise e desenvolvimento de sistemas. Eu me apaixonei por tecnologia e acho fascinante desenvolvimento front-end e back-end. Com certa experiência em HTML, CSS, e JavaScript.</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 data-aos="fade-up">Meu Portfólio</h2>
+            <div class="grid" data-aos="fade-up">
+                <div class="grid-item">
+                    <a href="./sitenamoro.html"><img src="namoro.png" alt="Projeto Site de Namoro" class="projetos"></a>
+                    <h3>Projeto Site de Namoro</h3>
+                    <p>Um site simples de namoro, uma estrutura simples e atrativa. Com opções de login, cadastro, chat ao vivo, depoimentos e alguns pontos diferencias do site.</p>
+                </div>
+                <div class="grid-item">
+                    <a href="./blog.html"><img src="blog.png" alt="Projeto Blog" class="projetos"></a>
+                    <h3>Projeto Blog</h3>
+                    <p>Um blog com posts, categorias, opção de contato e uma estrutura simples e objetiva.</p>
+                </div>
+                <div class="grid-item">
+                    <a href="./interativo.html"><img src="interacao.png" alt="Projeto Interativo"></a>
+                    <h3>Projeto Interativo</h3>
+                    <p>Um projeto para trabalhar com interação, foi o primeiro projeto que eu fiz sozinho com auxílio de aulas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container" data-aos="fade-up">
+            <h2>Contato</h2>
+            <form action="mailto:seuemail@exemplo.com" method="post" enctype="text/plain">
+                <input type="text" name="name" placeholder="Seu Nome" required>
+                <input type="email" name="email" placeholder="Seu Email" required>
+                <textarea name="message" placeholder="Sua Mensagem" required></textarea>
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Bernardo Bregeron Flores. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

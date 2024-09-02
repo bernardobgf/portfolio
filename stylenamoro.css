@@ -1,0 +1,238 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #ff5e5e;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 2rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: 2rem;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ffe6e6;
+}
+
+.hero {
+    background: url('https://via.placeholder.com/1920x600') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 10rem 1rem 8rem;
+    margin-top: 60px;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin: 0;
+    animation: slideInDown 1s ease-out;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    animation: fadeIn 2s ease-in;
+}
+
+.hero .btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    background-color: #ff5e5e;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #ff4c4c;
+}
+
+.features {
+    padding: 4rem 1rem;
+    text-align: center;
+    background-color: #fff;
+}
+
+.features h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.feature-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature {
+    flex: 1 1 30%;
+    margin: 1rem;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.feature img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1rem;
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.feature p {
+    font-size: 1rem;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+}
+
+.testimonials {
+    padding: 4rem 1rem;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.testimonials h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.testimonial-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    flex: 1 1 30%;
+    margin: 1rem;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.testimonial p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.testimonial h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.testimonial:hover {
+    transform: translateY(-5px);
+}
+
+.signup, .login {
+    padding: 4rem 1rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.signup h2, .login h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.signup form, .login form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signup input, .login input, .signup textarea, .login textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.signup button, .login button {
+    padding: 1rem 2rem;
+    background-color: #ff5e5e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.signup button:hover, .login button:hover {
+    background-color: #ff4c4c;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 4rem;
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
